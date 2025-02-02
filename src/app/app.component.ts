@@ -61,13 +61,11 @@ export class AppComponent implements OnInit{
   ngOnInit() {
     this.mockDataService.getMockData1().subscribe(
       (data) => {
-        console.log('✅ JSON Data:', data);
         this.results = data;
         console.log(data);
       });
       this.mockDataService.getMockData2().subscribe(
         (data2) => {
-          console.log('✅ JSON Data:', data2);
           this.zad = data2;
           console.log(data2);
         });
